@@ -1,0 +1,8 @@
+<map id="UIWidgetGroup" name="UIWidgetGroup">
+<area shape="rect" id="node1" title="Main abstraction of a group of interface widgets." alt="" coords="89,80,211,107"/>
+<area shape="rect" id="node4" href="$classUICards.html" title="Widget group which shows nothing or exactly one of its sub&#45;widgets." alt="" coords="5,155,79,181"/>
+<area shape="rect" id="node5" href="$classUIColumns.html" title="Widget group for widgets organized in columns one next to the other." alt="" coords="103,155,197,181"/>
+<area shape="rect" id="node6" href="$classUIRows.html" title="Widget group for widgets organized in rows one below the other." alt="" coords="221,155,292,181"/>
+<area shape="rect" id="node2" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="57,5,139,32"/>
+<area shape="rect" id="node3" href="$classUIParent.html" title="Simple abstraction of elements which have at least one child." alt="" coords="163,5,241,32"/>
+</map>

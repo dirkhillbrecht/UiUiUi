@@ -1,0 +1,4 @@
+<map id="UICheckerboard" name="UICheckerboard">
+<area shape="rect" id="node1" title="A widget drawing a checkerboard into its space." alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node2" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="27,5,109,32"/>
+</map>

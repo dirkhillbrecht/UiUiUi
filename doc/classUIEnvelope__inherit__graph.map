@@ -1,0 +1,5 @@
+<map id="UIEnvelope" name="UIEnvelope">
+<area shape="rect" id="node1" title="Envelope widget which contains exactly one other widget and changes its representation." alt="" coords="51,80,147,107"/>
+<area shape="rect" id="node2" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node3" href="$classUIParent.html" title="Simple abstraction of elements which have at least one child." alt="" coords="112,5,189,32"/>
+</map>

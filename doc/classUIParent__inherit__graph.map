@@ -1,0 +1,9 @@
+<map id="UIParent" name="UIParent">
+<area shape="rect" id="node1" title="Simple abstraction of elements which have at least one child." alt="" coords="124,5,201,32"/>
+<area shape="rect" id="node2" href="$classUIDisplay.html" title="Representation of the display onto which UiUiUi renders its user interface." alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="$classUIEnvelope.html" title="Envelope widget which contains exactly one other widget and changes its representation." alt="" coords="115,80,211,107"/>
+<area shape="rect" id="node4" href="$classUIWidgetGroup.html" title="Main abstraction of a group of interface widgets." alt="" coords="235,80,357,107"/>
+<area shape="rect" id="node5" href="$classUICards.html" title="Widget group which shows nothing or exactly one of its sub&#45;widgets." alt="" coords="151,155,225,181"/>
+<area shape="rect" id="node6" href="$classUIColumns.html" title="Widget group for widgets organized in columns one next to the other." alt="" coords="249,155,343,181"/>
+<area shape="rect" id="node7" href="$classUIRows.html" title="Widget group for widgets organized in rows one below the other." alt="" coords="367,155,438,181"/>
+</map>
