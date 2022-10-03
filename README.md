@@ -14,7 +14,7 @@ We start describing UiUiUi by giving an overview over its main concepts, the bui
 
 ### Widgets and widget groups
 
-UiUiUi organizes an user interface on a display in _widgets_. A widget is always rectengular and shows itself on a certain area on the screen.
+UiUiUi organizes an user interface on a display in _widgets_. A widget is always rectangular and shows itself on a certain area on the screen.
 
 ![Widgets](etc/readme-graphics/base-widgets.svg)
 *Basic structure of an UiUiUi interface with widgets*
@@ -39,7 +39,7 @@ A core concept of UiUiUi is the _static_ interface structure definition: Everyth
 Not having dynamic memory allocation might sound like a problem for a library which allows "widget groups" with an arbitary number of grouped widgets and an arbitrary depth of stacking the groups. UiUiUi solves the problem this way:
 
 * Each widget has a `next` pointer which _can_ point to another widget. Widgets in one group are linked together this way in a linked list.
-* Each widget group has a `firstChild` pointer which points to the first widget in this group.
+* Each widget group has a `firstChild` pointer which points to the first child widget in this group.
 
 ![Widget group pointers](etc/readme-graphics/widgetgroup-links.svg)
 *Linked list of widgets in their widget group*
@@ -49,7 +49,7 @@ As widget groups are themselves widgets, they also have a `next` pointer _additi
 ![Multiple widgets groups](etc/readme-graphics/multi-widgetgroups.svg)
 *Widget group (red) with two enclosed widget groups (orange) with three widgets (cyan) each*
 
-These pointers do _not_ point to objects on the heap, but to statically defined data in the data segment of the sketch. That means that the element pointed to must exist _before_ the pointer is created. That means that the order of defintion of the widget is _reverse_ to the order of the tree:
+These pointers do _not_ point to objects on the heap, but to statically defined data in the data segment of the sketch. That means that the element pointed to must exist _before_ the pointer is created. That means that the order of definition of the widget is _reverse_ to the order of the tree:
 
 * The last widget in a list is defined _first_.
 * The innermost widget group is also defined _first_.
@@ -136,7 +136,7 @@ The layout is generated in multiple steps.
 1. Each widget has a _preferred size_ in width and height.
 2. For both directions, the preferred size can either be a specific size in pixels or "as large as possible".
 3. The preferred size of a widget group is derived from the widgets it contains.
-4. `UIDisplay` triggers preferred size computation through the sidget tree.
+4. `UIDisplay` triggers preferred size computation through the widget tree.
 5. After that, `UIDisplay` calls the `layout()` method of the topmost wigdet.
 6. Each widget group then will split the area it got from its caller among the widgets in its group - and call each of them with their portion of the area.
 7. Each non-grouping widget will take the area it got for `layout()` and arrange its content appropriately.
@@ -469,7 +469,7 @@ void setup() {
   [...]
 ```
 
-With this addition, UiUiUi will not send more than six tiles if some rendering has taken place in the call to `render()` ("first run") and not more than 20 tiles if only the tile transmission happens in `render()` ("follow runs"). This will, of course, show down the rendering overall, but each run of `UIDisplay::render()` will stay within a certain time frame (depending on your hardware), so that you can much better control how long the gaps between calls to actual business login functions in the cooperative scheduling setup are.
+With this addition, UiUiUi will not send more than six tiles if some rendering has taken place in the call to `render()` ("first run") and not more than 20 tiles if only the tile transmission happens in `render()` ("follow runs"). This will, of course, slow down the rendering overall, but each run of `UIDisplay::render()` will stay within a certain time frame (depending on your hardware), so that you can much better control how long the gaps between calls to actual business login functions in the cooperative scheduling setup are.
 
 The [SimpleTimerTask](#simpletimertask) example program is the most simple example showing how this can be used. The most complex example is [MockWeatherStation](#mockweatherstation) which runs several asynchronous tasks which update different parts of the display.
 
@@ -481,7 +481,7 @@ And with this - we're done! Now you know everything you need to use UiUiUi. The 
 
 UiUiUi comes with a number of example programs. All of them need a display which is supported by by U8g2. The included code has been developed on a Heltec ESP 32 Lora board with an on-board SSD1306-OLED display with 128*64 pixels. You will almost surely have to change the U8G2 hardware description if you have another hardware.
 
-Some example program need two external buttons and an LED. Check the pin definition in those sketches and adapt them appropriately.
+Some example programs need two external buttons and an LED. Check the pin definition in those sketches and adapt them appropriately.
 
 ### HelloWorld
 
@@ -623,7 +623,7 @@ So, after all, there are not many names more natural than "UiUiUi" for this libr
 
 I write software since the mid-1980ies, mainly Turbo Pascal and, since about 1995, Java. I have some experience in C and in Arduino programming. But this is my first larger C++ project. Of course, I have quite an understanding of object-oriented programming in Java but C++ is a different story. Having "objects" on the data segment is something simply not possible in Java and it took me some time to actually understand the memory model behind all this.
 
-I want to develop small appliances and gadgets using microcontrollers like the ESP32. I like the idea of having a small display at the device, but I did not find a library I like to control the display. So I started writing my own. Voila: UiUiUi.
+I want to develop small appliances and gadgets using microcontrollers like the ESP32. I like the idea of having a small display at the device, but I did not find a library to control the display the way I want. So I started writing my own. Voila: UiUiUi.
 
 ### Development environment
 
