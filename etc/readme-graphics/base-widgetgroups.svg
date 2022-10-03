@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="543.77948"
+   height="418.22263"
+   viewBox="0 0 143.87499 110.65474"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="base-widgetgroups.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     lock-margins="true"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="1.3354119"
+     inkscape:cx="251.60776"
+     inkscape:cy="187.58257"
+     inkscape:window-width="2256"
+     inkscape:window-height="1467"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid892"
+       dotted="false"
+       enabled="true"
+       originx="-20.666676"
+       originy="-69.761951" />
+    <sodipodi:guide
+       position="0,110.65474"
+       orientation="0,543.77948"
+       id="guide14192" />
+    <sodipodi:guide
+       position="143.87499,110.65474"
+       orientation="418.22263,0"
+       id="guide14194" />
+    <sodipodi:guide
+       position="143.87499,0"
+       orientation="0,-543.77948"
+       id="guide14196" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-418.22263,0"
+       id="guide14198" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.666667,-69.761932)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       id="rect14200"
+       width="143.87498"
+       height="110.65473"
+       x="20.666668"
+       y="69.761932" />
+    <rect
+       style="fill:#ffcc00;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect31"
+       width="137.58333"
+       height="92.604172"
+       x="23.8125"
+       y="84.666664"
+       ry="0" />
+    <rect
+       style="fill:#ffd5d5;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect935"
+       width="105.83332"
+       height="55.562508"
+       x="31.74999"
+       y="92.604149" />
+    <rect
+       style="fill:#e9afaf;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect937"
+       width="127"
+       height="5.2916679"
+       x="29.104158"
+       y="153.45831" />
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect939"
+       width="13.229168"
+       height="55.5625"
+       x="140.22916"
+       y="92.604149" />
+    <rect
+       style="fill:#ffccaa;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect941"
+       width="63.500008"
+       height="5.2916656"
+       x="31.74999"
+       y="164.04164" />
+    <rect
+       style="fill:#f4d7d7;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect943"
+       width="55.562504"
+       height="5.2916732"
+       x="97.895821"
+       y="164.04164" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="76.1632"
+       y="80.451073"
+       id="text2015"><tspan
+         sodipodi:role="line"
+         id="tspan2013"
+         style="stroke-width:0.264583"
+         x="76.1632"
+         y="80.451073">Display</tspan></text>
+    <rect
+       style="opacity:0.47074689;fill:#aaccff;stroke-width:1;stroke:#000000;stroke-opacity:1"
+       id="rect38035"
+       width="127"
+       height="10.583333"
+       x="29.104158"
+       y="161.39581" />
+    <rect
+       style="opacity:0.470747;fill:#aaccff;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="rect38688"
+       width="127"
+       height="60.854164"
+       x="29.104158"
+       y="89.958313" />
+    <rect
+       style="opacity:0.470747;fill:#d5fff6;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="rect38690"
+       width="132.29167"
+       height="87.3125"
+       x="26.458324"
+       y="87.312485" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="49.882862"
+       y="100.54165"
+       id="text39552"><tspan
+         sodipodi:role="line"
+         id="tspan39550"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="49.882862"
+         y="100.54165">Horizontal widget group I</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="48.686916"
+       y="168.77483"
+       id="text39552-2"><tspan
+         sodipodi:role="line"
+         id="tspan39550-6"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="48.686916"
+         y="168.77483">Horizontal widget group II</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.87778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-31.517105"
+       y="162.00719"
+       id="text39552-2-1"
+       transform="rotate(-28.838507)"><tspan
+         sodipodi:role="line"
+         id="tspan39550-6-8"
+         style="font-size:9.87778px;stroke-width:0.264583"
+         x="-31.517105"
+         y="162.00719">Vertical widget group</tspan></text>
+  </g>
+</svg>
