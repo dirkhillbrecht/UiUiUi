@@ -66,7 +66,7 @@ int hour,minute,second;
 void setTime() {
   second=millis()/1000;
   minute=second/60;
-  hour=(minute/24)%24;
+  hour=(minute/60)%24;
   minute=minute%60;
   second=second%60;
 }
