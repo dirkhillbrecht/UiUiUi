@@ -175,6 +175,14 @@ class UIDisplay: public UIParent {
      * @param maxUpdateTiles Maximum number of tiles to update at once (at least one row or column)
      */
     void doUpdateTiles(U8G2 *display,uint16_t maxUpdateTiles);
+	
+	
+	/** Calculates the tiles on the display that correspond to the pixels in the given area.
+	 *
+	 * Each tile is 8 pixels tall and 8 pixels wide.
+	 * Rotation of the display IS taken into account.
+	 */
+	void computeTileAreaFromPixelArea(U8G2 *display, UIArea * pixelArea, UIArea * tileArea);
 
 };
 

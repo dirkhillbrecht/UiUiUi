@@ -120,10 +120,7 @@ void UIDisplay::render(U8G2 *display,bool force) {
     UIArea rendered=UIArea();
     rendered.uniteWith(root->render(display,force));
     if (rendered.hasArea()) {
-      updateTiles.set((rendered.left>>3)&0xff,
-                      (rendered.top>>3)&0xff,
-                      (((rendered.right+7)>>3)&0xff),
-                      (((rendered.bottom+7)>>3)&0xff));
+	  computeTileAreaFromPixelArea(display,&rendered,&updateTiles);
       if (maxFirstUpdateTiles>0)
         doUpdateTiles(display,maxFirstUpdateTiles);
     }
@@ -132,6 +129,47 @@ void UIDisplay::render(U8G2 *display,bool force) {
 
 bool UIDisplay::isUpdatingDisplay() {
   return updateTiles.hasArea();
+}
+
+void UIDisplay::computeTileAreaFromPixelArea(U8G2 *display, UIArea * pixelArea, UIArea * tileArea)
+{
+  //resulting computation depends on the rotation of the display. 
+  //Note that the U8G2 rotation #define is actually a callback function pointer, not just an enum, so be careful!
+  if(display->getU8g2()->cb == U8G2_R0)//No rotation
+  {
+  	tileArea->set(((                             pixelArea->left)    >>3)&0xff,
+			      ((                             pixelArea->top)     >>3)&0xff,
+			      ((                             pixelArea->right+7) >>3)&0xff,
+			      ((                             pixelArea->bottom+7)>>3)&0xff);
+  }
+  else if(display->getU8g2()->cb == U8G2_R1)//top right of pixel area is top left of screen
+  {
+  	tileArea->set(((display->getDisplayHeight()- pixelArea->bottom)  >>3)&0xff,
+			      ((                             pixelArea->left)    >>3)&0xff,
+			      ((display->getDisplayHeight()- pixelArea->top+7)   >>3)&0xff,
+			      ((                             pixelArea->right+7) >>3)&0xff);
+  }
+  else if(display->getU8g2()->cb == U8G2_R2)//top right of pixel area is bottom left of screen
+  {
+  	tileArea->set(((display->getDisplayWidth() - pixelArea->right)   >>3)&0xff,
+			      ((display->getDisplayHeight()- pixelArea->bottom)  >>3)&0xff,
+			      ((display->getDisplayWidth() - pixelArea->left+7)  >>3)&0xff,
+			      ((display->getDisplayHeight()- pixelArea->top+7)   >>3)&0xff);
+  }
+  else if(display->getU8g2()->cb == U8G2_R3)//top right of pixel area is bottom right of screen
+  {
+  	tileArea->set(((                             pixelArea->top)     >>3)&0xff,
+			      ((display->getDisplayWidth() - pixelArea->left)    >>3)&0xff,
+			      ((                             pixelArea->bottom+7)>>3)&0xff,
+			      ((display->getDisplayWidth() - pixelArea->right+7) >>3)&0xff);
+  }
+  else//Should never happen. just update the whole screen.
+  {
+  	tileArea->set((0)&0xff,
+			      (0)&0xff,
+			      ((display->getDisplayWidth())                      >>3)&0xff,
+			      ((display->getDisplayHeight())                     >>3)&0xff);
+  }
 }
 
 // end of file
