@@ -36,6 +36,7 @@
 #include "UICheckerboard.h"
 #include "UIEnvelope.h"
 #include "UIProgressBar.h"
+#include "UIBitmap.h"
 
 // Widget groups
 #include "UIWidgetGroup.h"
