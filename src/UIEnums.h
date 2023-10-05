@@ -11,4 +11,7 @@ enum UIAlignment { TopLeft,TopCenter,TopRight,CenterLeft,Center,CenterRight,Bott
 /** Expansion directions if there is more space on the display than preferred. */
 enum UIExpansion { None,Horizontal,Vertical,Both };
 
+/** Direction of a widget if it can be oriented in multiple ways. Compatible with U8G2.setFontDirection. */
+enum UIDirection { LeftToRight, TopToDown, RightToLeft, DownToTop };
+
 // end of file
