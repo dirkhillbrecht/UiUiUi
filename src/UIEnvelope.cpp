@@ -64,6 +64,7 @@ void UIEnvelope::computePreferredSize(U8G2 *display,UISize *preferredSize) {
   if (expansion==UIExpansion::Vertical || expansion==UIExpansion::Both)
     preferredSize->height=UISize::MAX_LEN;
   preferredSize->cumulateBoth(&borderSize);
+  preferredSize->cumulateBoth(&borderSize);//double because borderSize dimensions only represent half of the contrinuted thickness
 }
 
 // end of file
