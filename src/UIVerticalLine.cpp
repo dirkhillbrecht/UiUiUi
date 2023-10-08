@@ -32,7 +32,7 @@ UIArea* UIVerticalLine::render(U8G2 *display,bool force) {
 
 /* The preferred size of a line is 1+2*border in width and "as high as possible" */
 void UIVerticalLine::computePreferredSize(U8G2 *display,UISize *preferredSize) {
-  preferredSize->set(2*border+1,UISize::MAX_LEN);
+  preferredSize->set(2*border+1,0);
 }
 
 // end of file

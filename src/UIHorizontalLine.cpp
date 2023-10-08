@@ -35,7 +35,7 @@ UIArea* UIHorizontalLine::render(U8G2 *display,bool force) {
 
 /* The preferred size of a line is 1+2*border in height and "as wide as possible" */
 void UIHorizontalLine::computePreferredSize(U8G2 *display,UISize *preferredSize) {
-  preferredSize->set(UISize::MAX_LEN,2*border+1);
+  preferredSize->set(0,2*border+1);
 }
 
 // end of file
