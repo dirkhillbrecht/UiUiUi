@@ -501,6 +501,10 @@ This is the first sketch which actually performs some action on the display. It 
 
 This sketch does exactly the same as SimpleTimerLoop, but uses an event-driven approach with the TaskManagerIO library.
 
+### RotatedDisplay
+
+This sketch is also derived from SimpleTimerLoop and shows that UiUiUi can also handle rotated display orientations.
+
 ### ButtonsAndLED
 
 Two buttons are used to switch an LED on and off. The LED state is dubbed by an "On"/"Off" message on the display. Additionally, two small indicators in a status line at the bottom of the display indicate whether one of the buttons is just pressed.
@@ -599,12 +603,6 @@ This extension would need a slightly more sophisticated approach to rendering: R
 
 The U8g2 handlers implement the `Print` interface. It allows to print all types of variables as easy as with `Serial`. UiUiUi doens't do that. Assuming there was a `UIMultiTextLine` widget (probably consisting of `UITextLine`s), that one could implement some row-break algorithms for long strings and finally also a `print()`/`println()` method.
 
-### Rotated displays
-
-UiUiUi currently only implements updating displays which are not rotated. Rotation requies additional computations to convert the coordinates of the area to update on the display into tile coordinates.
-
-This should be a rather minor and local addition affecting only the tiles coordination computation.
-
 ### Generalisation away from Arduino IDE
 
 The UiUiUi library is currently developed within the Arduino ecosystem. It could be used in other ecosystems and could be embedded into other library managers (e.g. PlatformIO). However, somewhere a starting point had to be made - and Arduino it was.
@@ -627,7 +625,7 @@ I want to develop small appliances and gadgets using microcontrollers like the E
 
 ### Development environment
 
-I program using the Arduino IDE 1.8.19. The UiUiUi source code is loaded in an external editor and project and linked symbolically into the Arduino sketchbook's library section.
+I program using the Arduino IDE 2.2.1 (after starting in the old 1.8 series). The UiUiUi source code is loaded in an external editor and project and linked symbolically into the Arduino sketchbook's library section.
 
 I have used the Heltec Wifi Lora ESP32 module with on-board SSD1306 OLED display. So far, this is my only development environment. I have access to an Arduino ATMega 2560, but no display to connect it to. I'd like to test this whole stuff together with an e-paper display.
 
@@ -638,3 +636,4 @@ For the first weeks, I used [WokWi](https://wokwi.com/) to develop the most basi
 | Version | Date | Main changes
 |:--:|:--:|:--
 | 0.9 | 2022‑10‑03 | Initial public release. UiUiUi is already used in projects, so it's pretty close to its 1.0 release.
+| 0.9.1 | 2023-10-15 | U8g2's display orientation feature supported, minor bugfixes in example programs
