@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BSD-2-Clause
-// (C) 2022 Dirk Hillbrecht
+// (C) 2022-2023 Dirk Hillbrecht, Andrew Burks
 
 #pragma once
 
