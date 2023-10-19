@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classUIParent.html" title="Simple abstraction of elements which have at least one child." alt="" coords="8,56,85,83"/>
+<area shape="rect" id="node2" href="$classUIDisplay.html" title="Representation of the display onto which UiUiUi renders its user interface." alt="" coords="159,5,244,32"/>
+<area shape="rect" id="node3" href="$classUIEnvelope.html" title="Envelope widget which contains exactly one other widget and changes its representation." alt="" coords="153,56,249,83"/>
+<area shape="rect" id="node4" href="$classUIWidgetGroup.html" title="Main abstraction of a group of interface widgets." alt="" coords="141,107,262,133"/>
+<area shape="rect" id="node5" href="$classUICards.html" title="Widget group which shows nothing or exactly one of its sub&#45;widgets." alt="" coords="325,56,398,83"/>
+<area shape="rect" id="node6" href="$classUIColumns.html" title="Widget group for widgets organized in columns one next to the other." alt="" coords="315,107,408,133"/>
+<area shape="rect" id="node7" href="$classUIRows.html" title="Widget group for widgets organized in rows one below the other." alt="" coords="326,157,397,184"/>
+<area shape="rect" id="node8" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="5,208,88,235"/>
+<area shape="rect" id="node9" href="$classUIBitmap.html" title="A widget containing a bitmap (XBMP) which is set statically during compile time." alt="" coords="160,360,243,387"/>
+<area shape="rect" id="node10" href="$classUICheckerboard.html" title="A widget drawing a checkerboard into its space." alt="" coords="139,157,264,184"/>
+<area shape="rect" id="node11" href="$classUIHorizontalLine.html" title="Horizontal line with optional empty border on top and bottom, always spreads as wide as possible to t..." alt="" coords="136,208,267,235"/>
+<area shape="rect" id="node12" href="$classUITextLine.html" title="A widget containing a line of text which is set dynamically during runtime using setText()." alt="" coords="156,259,247,285"/>
+<area shape="rect" id="node14" href="$classUIVerticalLine.html" title="Vertical line with optional empty border left and right, always spreads as wide as possible to top an..." alt="" coords="145,309,257,336"/>
+<area shape="rect" id="node13" href="$classUITextIcon.html" title="Widget which shows an icon by some normal text operation, usually with a font with icons." alt="" coords="316,259,407,285"/>
+</map>

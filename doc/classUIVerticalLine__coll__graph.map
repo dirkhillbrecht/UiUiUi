@@ -1,6 +1,0 @@
-<map id="UIVerticalLine" name="UIVerticalLine">
-<area shape="rect" id="node1" title="Vertical line with optional empty border left and right, always spreads as wide as possible to top an..." alt="" coords="31,171,143,197"/>
-<area shape="rect" id="node2" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="45,95,128,121"/>
-<area shape="rect" id="node3" href="$classUIParent.html" title="Simple abstraction of elements which have at least one child." alt="" coords="5,5,83,32"/>
-<area shape="rect" id="node4" href="$classUIArea.html" title="Area consisting of left, top, right, and bottom value." alt="" coords="107,5,173,32"/>
-</map>

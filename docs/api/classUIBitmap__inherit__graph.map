@@ -1,0 +1,4 @@
+<map id="UIBitmap" name="UIBitmap">
+<area shape="rect" id="node1" title="A widget containing a bitmap (XBMP) which is set statically during compile time." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node2" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="5,5,88,32"/>
+</map>

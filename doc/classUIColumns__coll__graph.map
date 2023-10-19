@@ -1,7 +1,0 @@
-<map id="UIColumns" name="UIColumns">
-<area shape="rect" id="node1" title="Widget group for widgets organized in columns one next to the other." alt="" coords="20,260,113,287"/>
-<area shape="rect" id="node2" href="$classUIWidgetGroup.html" title="Main abstraction of a group of interface widgets." alt="" coords="6,184,127,211"/>
-<area shape="rect" id="node3" href="$classUIWidget.html" title="Basic widget class, ancestor of all UI widgets." alt="" coords="69,95,152,121"/>
-<area shape="rect" id="node4" href="$classUIParent.html" title="Simple abstraction of elements which have at least one child." alt="" coords="5,5,83,32"/>
-<area shape="rect" id="node5" href="$classUIArea.html" title="Area consisting of left, top, right, and bottom value." alt="" coords="120,5,187,32"/>
-</map>

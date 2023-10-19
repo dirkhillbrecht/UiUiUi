@@ -1,0 +1,14 @@
+<map id="UIWidget" name="UIWidget">
+<area shape="rect" id="node1" title="Basic widget class, ancestor of all UI widgets." alt="" coords="5,157,88,184"/>
+<area shape="rect" id="node2" href="$classUIBitmap.html" title="A widget containing a bitmap (XBMP) which is set statically during compile time." alt="" coords="160,5,243,32"/>
+<area shape="rect" id="node3" href="$classUICheckerboard.html" title="A widget drawing a checkerboard into its space." alt="" coords="139,56,264,83"/>
+<area shape="rect" id="node4" href="$classUIEnvelope.html" title="Envelope widget which contains exactly one other widget and changes its representation." alt="" coords="153,107,249,133"/>
+<area shape="rect" id="node5" href="$classUIHorizontalLine.html" title="Horizontal line with optional empty border on top and bottom, always spreads as wide as possible to t..." alt="" coords="136,157,267,184"/>
+<area shape="rect" id="node6" href="$classUITextLine.html" title="A widget containing a line of text which is set dynamically during runtime using setText()." alt="" coords="156,208,247,235"/>
+<area shape="rect" id="node8" href="$classUIVerticalLine.html" title="Vertical line with optional empty border left and right, always spreads as wide as possible to top an..." alt="" coords="145,259,257,285"/>
+<area shape="rect" id="node9" href="$classUIWidgetGroup.html" title="Main abstraction of a group of interface widgets." alt="" coords="141,309,262,336"/>
+<area shape="rect" id="node7" href="$classUITextIcon.html" title="Widget which shows an icon by some normal text operation, usually with a font with icons." alt="" coords="316,208,407,235"/>
+<area shape="rect" id="node10" href="$classUICards.html" title="Widget group which shows nothing or exactly one of its sub&#45;widgets." alt="" coords="325,259,398,285"/>
+<area shape="rect" id="node11" href="$classUIColumns.html" title="Widget group for widgets organized in columns one next to the other." alt="" coords="315,309,408,336"/>
+<area shape="rect" id="node12" href="$classUIRows.html" title="Widget group for widgets organized in rows one below the other." alt="" coords="326,360,397,387"/>
+</map>
