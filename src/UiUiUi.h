@@ -13,7 +13,7 @@
  * You incorporate UiUiUi into your project by one of two alternative ways:
  *
  * 1. Include `UiUiUi.h` to access the whole library and all widget types.
- *    Use this if you design a complex interface and if compile time is not of that imporance.
+ *    Use this if you design a complex interface and compile time does not matter.
  * 2. In smaller projects, you can simply include the header files of the classes
  *    you need directly. It makes no difference and all subsequently needed files
  *    will be loaded internally anyway.
