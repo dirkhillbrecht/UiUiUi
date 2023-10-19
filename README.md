@@ -73,8 +73,9 @@ The basic widgets actually _show_ something on the screen. As the library is in 
 
 * `UITextLine` - One line of text of arbitrary length.
 * `UITextIcon` - A text containing usually one character which is an icon.
+* `UIBitmap` - An area showing a bitmap stored in XBMP format in the program.
 * `UIHorizontalLine`, `UIVerticalLine` - A horizontal or vertical line of a certain width and a border with some width next to it.
-* `UICheckerboard` - A single-pixel checkerboard pattern. 
+* `UICheckerboard` - A single-pixel checkerboard pattern.
 
 #### Decorating widgets
 
@@ -505,6 +506,10 @@ This sketch does exactly the same as SimpleTimerLoop, but uses an event-driven a
 
 This sketch is also derived from SimpleTimerLoop and shows that UiUiUi can also handle rotated display orientations.
 
+### Bitmap
+
+A bitmap is drawn four times on the screen and cycled through two different alignments.
+
 ### ButtonsAndLED
 
 Two buttons are used to switch an LED on and off. The LED state is dubbed by an "On"/"Off" message on the display. Additionally, two small indicators in a status line at the bottom of the display indicate whether one of the buttons is just pressed.
@@ -635,5 +640,6 @@ For the first weeks, I used [WokWi](https://wokwi.com/) to develop the most basi
 
 | Version | Date | Main changes
 |:--:|:--:|:--
-| 0.9 | 2022‑10‑03 | Initial public release. UiUiUi is already used in projects, so it's pretty close to its 1.0 release.
+| 0.9.0 | 2022‑10‑03 | Initial public release. UiUiUi is already used in projects, so it's pretty close to its 1.0 release.
 | 0.9.1 | 2023-10-15 | U8g2's display orientation feature supported, minor bugfixes in example programs
+| 0.9.2 | 2023-10-19 | UIBitmap widget, Fixes to UIEnvelope and UI line widgets, API documentation moved
